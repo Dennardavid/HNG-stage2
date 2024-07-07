@@ -38,7 +38,12 @@ function Footer() {
   return (
     <footer className="bg-[#22252A] text-[#F8F7F7] flex flex-col items-center justify-center gap-[32px] px-[80px] pt-[48px] pb-[46px]">
       <div className="flex gap-[152px]">
-        <Image src="/Ruvid_Store_Logo-white.svg" width={80} height={80} />
+        <Image
+          src="/Ruvid_Store_Logo-white.svg"
+          width={80}
+          height={80}
+          className="cursor-pointer"
+        />
         <div className="flex gap-[152px] pt-[20px] pb-[10px]">
           {footerLinks.map((links, index) => (
             <div key={index}>

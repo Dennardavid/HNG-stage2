@@ -1,20 +1,32 @@
 [
-  { "src": "", "details": "Gucci Flora Prefume", "prize": "$172" },
-  { "src": "", "details": "Chanel Coco Mademoiselle ", "prize": "$185.57" },
-  { "src": "", "details": "N°5 Eau de Parfum Spray", "prize": "$121.52" },
-  { "src": "", "details": "N°5 Eau de Parfum Spray", "prize": "$100" },
-  { "src": "", "details": "Hugo Boss Oud Aromatic", "prize": "$63.99" },
-  { "src": "", "details": "Daisy Marc Jacobs", "prize": "$107.50" },
-  { "src": "", "details": "Gucci Flora Prefume", "prize": "$121.52" },
-  { "src": "", "details": "Chanel Coco Mademoiselle ", "prize": "$185.57" },
-  { "src": "", "details": "N°5 Eau de Parfum Spray", "prize": "$172" },
-  { "src": "", "details": "N°5 Eau de Parfum Spray", "prize": "$100" },
-  { "src": "", "details": "Hugo Boss Oud Aromatic", "prize": "$63.99" },
-  { "src": "", "details": "Daisy Marc Jacobs", "prize": "$107.50" },
-  { "src": "", "details": "Gucci Flora Prefume", "prize": "$121.52" },
-  { "src": "", "details": "Chanel Coco Mademoiselle ", "prize": "$185.57" },
-  { "src": "", "details": "N°5 Eau de Parfum Spray", "prize": "$172" },
-  { "src": "", "details": "N°5 Eau de Parfum Spray", "prize": "$100" },
-  { "src": "", "details": "Hugo Boss Oud Aromatic", "prize": "$63.99" },
-  { "src": "", "details": "Playing With The Devil", "prize": "$107.50" }
+  { "src": "/1.svg", "details": "Gucci Flora Prefume", "prize": "$172" },
+  {
+    "src": "/2.svg",
+    "details": "Chanel Coco Mademoiselle ",
+    "prize": "$185.57"
+  },
+  { "src": "/3.svg", "details": "N°5 Eau de Parfum Spray", "prize": "$121.52" },
+  { "src": "/4.svg", "details": "N°5 Eau de Parfum Spray", "prize": "$100" },
+  { "src": "/5.svg", "details": "Hugo Boss Oud Aromatic", "prize": "$63.99" },
+  { "src": "/6.svg", "details": "Daisy Marc Jacobs", "prize": "$107.50" },
+  { "src": "/7.svg", "details": "Gucci Flora Prefume", "prize": "$121.52" },
+  {
+    "src": "/8.svg",
+    "details": "Chanel Coco Mademoiselle ",
+    "prize": "$185.57"
+  },
+  { "src": "/9.svg", "details": "N°5 Eau de Parfum Spray", "prize": "$172" },
+  { "src": "/10.svg", "details": "N°5 Eau de Parfum Spray", "prize": "$100" },
+  { "src": "/11.svg", "details": "Hugo Boss Oud Aromatic", "prize": "$63.99" },
+  { "src": "/12.svg", "details": "Daisy Marc Jacobs", "prize": "$107.50" },
+  { "src": "/13.svg", "details": "Gucci Flora Prefume", "prize": "$121.52" },
+  {
+    "src": "/14.svg",
+    "details": "Chanel Coco Mademoiselle ",
+    "prize": "$185.57"
+  },
+  { "src": "/15.svg", "details": "N°5 Eau de Parfum Spray", "prize": "$172" },
+  { "src": "/16.svg", "details": "N°5 Eau de Parfum Spray", "prize": "$100" },
+  { "src": "/17.svg", "details": "Hugo Boss Oud Aromatic", "prize": "$63.99" },
+  { "src": "/18.svg", "details": "Playing With The Devil", "prize": "$107.50" }
 ]
