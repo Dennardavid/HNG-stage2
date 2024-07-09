@@ -9,13 +9,13 @@ function Navbar() {
 
   return (
     <header className="px-[50px] py-[15px] border-b-[0.5px] border-b-[#0000004d]">
-      <nav className="flex items-center justify-around">
+      <nav className="lg:flex lg:items-center lg:justify-around">
         {/* Shop Logo */}
         <Image
           src="/Ruvid_Store_Logo.svg"
           width={80}
           height={80}
-          className="cursor-pointer"
+          className="hidden lg:block lg:cursor-pointer"
         />
 
         {/* Search bar */}

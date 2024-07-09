@@ -51,7 +51,7 @@ function CartSummary() {
             <p className="text-xl font-medium">$121.52</p>
           </div>
           <Link href="/checkout" className="flex justify-center items-center">
-            <button className="bg-[#FF7E08] rounded-full text-white py-4 w-[80%] font-semibold">
+            <button className="bg-[#FF7E08] rounded-full text-white py-4 w-[80%] font-semibold border-[0.5px] border-[#ff7e08] hover:text-[#00140d] hover:border-[0.5px] hover:border-[#ff7e08] hover:bg-[#f8f8f8]">
               Checkout
             </button>
           </Link>

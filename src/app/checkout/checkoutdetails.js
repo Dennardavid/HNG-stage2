@@ -109,7 +109,7 @@ function CheckoutDetails() {
             <p className="text-[#FF7E08] font-medium text-base">$124.74</p>
           </div>
           <div className="flex justify-center items-center mt-5">
-            <button className="bg-[#FF7E08] rounded-full text-white py-4 w-[80%] font-semibold m-auto">
+            <button className="bg-[#FF7E08] rounded-full text-white py-4 w-[80%] font-semibold m-auto border-[0.5px] border-[#ff7e08] hover:text-[#00140d] hover:border-[0.5px] hover:border-[#ff7e08] hover:bg-[#f8f8f8]">
               Checkout
             </button>
           </div>

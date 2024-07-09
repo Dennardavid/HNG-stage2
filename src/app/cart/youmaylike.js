@@ -25,7 +25,7 @@ function YouMayLike() {
           <p className="font-medium text-[#FF7E08] leading-7 text-base pt-1">
             {product.prize}
           </p>
-          <button className="bg-[#FF7E08] rounded-full px-[20px] py-[7px] text-[#f6f2f4] font-medium mt-[7px]">
+          <button className="bg-[#FF7E08] rounded-full px-[20px] py-[7px] text-[#f6f2f4] font-medium mt-[7px] border-[0.5px] border-[#ff7e08] hover:bg-[#f8f8f8] hover:text-[#00140d] hover:border-[0.5px] hover:border-[#ff7e08]">
             Add to cart
           </button>
         </div>
