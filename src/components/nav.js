@@ -12,7 +12,7 @@ function Navbar() {
       <nav className="lg:flex lg:items-center lg:justify-around">
         {/* Shop Logo */}
         <Image
-          src="/Ruvid_Store_Logo.svg"
+          src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540377/Ruvid_Store_Logo_vdp940.svg"
           width={80}
           height={80}
           className="hidden lg:block lg:cursor-pointer"
@@ -20,20 +20,25 @@ function Navbar() {
 
         {/* Search bar */}
         <div className="flex p-2 px-3 rounded-full bg-[#F2F1F0]">
-          <Image src="/search.svg" width={24} height={24} className="mr-2" />
+          <Image
+            src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540379/search_wq6dxd.svg"
+            width={24}
+            height={24}
+            className="mr-2"
+          />
           <input
             type="text"
             placeholder="What are you looking for"
             className="w-[500px] bg-[#F2F1F0] focus:outline-none "
           />
           <Image
-            src="/camera.svg"
+            src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540360/camera_s6fpfc.svg"
             width={24}
             height={24}
             className="mr-2 ml-2 cursor-pointer"
           />
           <Image
-            src="/filter.svg"
+            src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540362/filter_vq9v6o.svg"
             width={24}
             height={24}
             className="cursor-pointer"
@@ -47,14 +52,26 @@ function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
           >
             <div>
-              <Image src="/profile.svg" width={36} height={36} />
+              <Image
+                src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540388/profile_owx8pe.svg"
+                width={36}
+                height={36}
+              />
             </div>
             <p>Hi, Ebunoluwa</p>
             <span>
               {isOpen ? (
-                <Image src="/Navigation2.svg" width={24} height={24} />
+                <Image
+                  src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540372/Navigation2_ok6uhp.svg"
+                  width={24}
+                  height={24}
+                />
               ) : (
-                <Image src="/Navigation.svg" width={24} height={24} />
+                <Image
+                  src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540370/Navigation_scinpl.svg"
+                  width={24}
+                  height={24}
+                />
               )}
             </span>
 
@@ -86,7 +103,11 @@ function Navbar() {
           {/* Cart  */}
           <div>
             <Link href="/cart">
-              <Image src="/cart.svg" width={24} height={24} />
+              <Image
+                src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540360/cart_jesv3q.svg"
+                width={24}
+                height={24}
+              />
             </Link>
           </div>
         </div>

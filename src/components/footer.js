@@ -39,7 +39,7 @@ function Footer() {
     <footer className="bg-[#22252A] text-[#F8F7F7] flex flex-col items-center justify-center gap-[32px] px-[80px] pt-[48px] pb-[46px]">
       <div className="flex gap-[152px]">
         <Image
-          src="/Ruvid_Store_Logo-white.svg"
+          src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540378/Ruvid_Store_Logo-white_z1inpz.svg"
           width={80}
           height={80}
           className="cursor-pointer"
@@ -55,7 +55,11 @@ function Footer() {
         </div>
       </div>
       <div className="flex gap-[11px] justify-center">
-        <Image src="/copyright.svg" width={24} height={24} />
+        <Image
+          src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540361/copyright_qxf1vx.svg"
+          width={24}
+          height={24}
+        />
         <p>All rights reserved, Ruvid Store 2024</p>
       </div>
     </footer>
