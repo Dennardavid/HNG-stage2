@@ -4,11 +4,11 @@ import Toggle from "./toggle";
 function CheckoutDetails() {
   return (
     <section className="flex justify-between px-24">
-      <div className="w-[70%] border-r-[0.5px] border-r-[#0000004d] ">
-        <div className="pt-3 pb-2 border-b-[0.5px] border-b-[#0000004d]">
+      <div className="w-[70%] border-r-[0.5px] border-r-[#BEC0BF] ">
+        <div className="pt-3 pb-2 border-b-[0.5px] border-b-[#BEC0BF]">
           <h3 className="font-semibold text-lg">Delivery Details</h3>
         </div>
-        <div className="flex flex-col gap-3 pb-2 border-b-[0.5px] border-b-[#0000004d]">
+        <div className="flex flex-col gap-3 pb-2 border-b-[0.5px] border-b-[#BEC0BF]">
           <div className="flex justify-between py-1 pt-1">
             <p className="text-sm ">Customer Address</p>
             <p className="text-sm text-[#FF7E08] hover:cursor-pointer mr-3">
@@ -22,7 +22,7 @@ function CheckoutDetails() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-3 pb-2 border-b-[0.5px] border-b-[#0000004d]">
+        <div className="flex flex-col gap-3 pb-2 border-b-[0.5px] border-b-[#BEC0BF]">
           <div className="flex justify-between pt-1j">
             <p className="text-sm">Delivery Mode</p>
             <p className="text-sm text-[#FF7E08] hover:cursor-pointer mr-3">
@@ -38,7 +38,7 @@ function CheckoutDetails() {
         </div>
 
         <div className="pt-3 bg-red-400w w-[60%] ">
-          <div className="border-b-[0.5px] border-b-[#0000004d] pb-2">
+          <div className="border-b-[0.5px] border-b-[#BEC0BF] pb-2">
             <label htmlFor="card">Card Number</label>
             <br />
             <div className="flex items-center gap-3 mt-3">
@@ -52,7 +52,7 @@ function CheckoutDetails() {
             </div>
           </div>
 
-          <div className="mt-3 flex justify-between border-b-[0.5px] border-b-[#0000004d] pb-2">
+          <div className="mt-3 flex justify-between border-b-[0.5px] border-b-[#BEC0BF] pb-2">
             <div>
               <label htmlFor="date">Valid Till</label>
               <br />
@@ -88,10 +88,10 @@ function CheckoutDetails() {
         </div>
       </div>
       <div className=" w-[30%]">
-        <div className="pt-3 pb-2 border-b-[0.5px] border-b-[#0000004d] px-3">
+        <div className="pt-3 pb-2 border-b-[0.5px] border-b-[#BEC0BF] px-3">
           <h3 className="font-semibold text-lg">Order Summary</h3>
         </div>
-        <div className=" flex justify-between pb-[14.5px] border-b-[0.5px] border-b-[#0000004d] px-3">
+        <div className=" flex justify-between pb-[14.5px] border-b-[0.5px] border-b-[#BEC0BF] px-3">
           <div className="flex flex-col gap-2 pt-1">
             <p>item</p>
             <p>Delivery Fees</p>

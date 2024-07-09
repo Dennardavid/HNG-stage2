@@ -59,7 +59,7 @@ function Hero() {
 
   return (
     <section className="flex justify-between pb-16 background z-10">
-      <div className="flex items-center border-r-[0.5px] border-b-[#0000004d] pl-[100px] pr-32 ">
+      <div className="flex items-center pl-[100px] pr-32 ">
         <ul className="flex flex-col gap-[16px]">
           {renderProductsItems(products)}
         </ul>

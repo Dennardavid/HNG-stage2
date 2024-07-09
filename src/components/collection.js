@@ -36,12 +36,12 @@ function Collection() {
   return (
     <section className="px-[80px] pb-[60px] pt-5">
       <div className="grid grid-cols-6 gap-y-8 gap-x-4">
-        <div className="col-span-6 h-[0.5px] bg-[#0000004d]"></div>
+        <div className="col-span-6 h-[0.5px] bg-[#BEC0BF]"></div>
         {products.map((product, index) => (
           <React.Fragment key={crypto.randomUUID()}>
             {renderProductsItems([product])}
             {index % 6 === 5 && index < products.length - 1 && (
-              <div className="col-span-6 h-[0.5px] bg-[#0000004d]"></div>
+              <div className="col-span-6 h-[0.5px] bg-[#BEC0BF]"></div>
             )}
           </React.Fragment>
         ))}

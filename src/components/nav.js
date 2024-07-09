@@ -8,7 +8,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="px-[50px] py-[15px] border-b-[0.5px] border-b-[#0000004d] z-20">
+    <header className="px-[50px] py-[15px] z-20">
       <nav className="lg:flex lg:items-center lg:justify-around">
         {/* Shop Logo */}
         <Image
