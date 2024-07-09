@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function CartSummary() {
   return (
@@ -49,9 +50,11 @@ function CartSummary() {
             <p className="text-base font-normal">subtotal</p>
             <p className="text-xl font-medium">$121.52</p>
           </div>
-          <button className="bg-[#FF7E08] rounded-full text-white py-4 w-[80%] font-semibold m-auto">
-            Checkout
-          </button>
+          <Link href="/checkout" className="flex justify-center items-center">
+            <button className="bg-[#FF7E08] rounded-full text-white py-4 w-[80%] font-semibold">
+              Checkout
+            </button>
+          </Link>
         </div>
       </div>
     </section>
