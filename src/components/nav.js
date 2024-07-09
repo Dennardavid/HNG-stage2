@@ -60,17 +60,23 @@ function Navbar() {
 
             {/* Drop down menu */}
             {isOpen && (
-              <div className="absolute top-12 right-2 w-[170px] bg-[#F2F1F0] rounded-md shadow-md flex flex-col gap-2 z-20">
-                <Link href={"/"} className="hover:bg-[#FF7E08] p-2">
-                  Home
-                </Link>
-                <Link href={"/"} className="hover:bg-[#FF7E08] p-2">
+              <div className="absolute top-12 right-2 w-[150px] bg-[#F2F1F0] rounded-md shadow-md flex flex-col gap-2 z-20">
+                <Link
+                  href={"/"}
+                  className="hover:bg-[#FF7E08] p-2 hover:text-[#f2f1f0] rounded-t-md"
+                >
                   Explore
                 </Link>
-                <Link href={"/cart"} className="hover:bg-[#FF7E08] p-2">
+                <Link
+                  href={"/cart"}
+                  className="hover:bg-[#FF7E08] p-2 hover:text-[#f2f1f0]"
+                >
                   Cart
                 </Link>
-                <Link href={"/"} className="hover:bg-[#FF7E08] p-2">
+                <Link
+                  href={"/"}
+                  className="hover:bg-[#FF7E08] p-2 hover:text-[#f2f1f0] rounded-b-md"
+                >
                   Wishlist
                 </Link>
               </div>
