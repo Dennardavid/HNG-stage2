@@ -7,7 +7,7 @@ function Collection() {
     return products.map((product) => (
       <article
         key={crypto.randomUUID()}
-        className="cursor-pointer flex flex-col items-center justify-between py-2 rounded-[13px] transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-100 hover:shadow-lg"
+        className="py-1 lg:cursor-pointer flex flex-col items-center justify-between lg:py-2 rounded-[13px] transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-100 hover:shadow-lg"
       >
         <div>
           <Image
@@ -34,13 +34,14 @@ function Collection() {
   };
 
   return (
-    <section className="px-[80px] pb-[60px] pt-5">
-      <div className="grid grid-cols-6 gap-y-8 gap-x-4">
+    <section className="px-2 pb-1 pt-1 lg:px-[80px] lg:pb-[60px] lg:pt-5">
+      <div className="grid grid-cols-3 lg:grid-cols-6 lg:gap-y-8 lg:gap-x-4">
         <div className="col-span-6 h-[0.5px] bg-[#BEC0BF]"></div>
         {products.map((product, index) => (
           <React.Fragment key={crypto.randomUUID()}>
             {renderProductsItems([product])}
-            {index % 6 === 5 && index < products.length - 1 && (
+            {(index % 3 === 2 ||
+              (index % 6 === 5 && index < products.length - 1)) && (
               <div className="col-span-6 h-[0.5px] bg-[#BEC0BF]"></div>
             )}
           </React.Fragment>

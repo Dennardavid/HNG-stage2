@@ -36,7 +36,7 @@ function Footer() {
     ));
 
   return (
-    <footer className="bg-[#22252A] text-[#F8F7F7] flex flex-col items-center justify-center gap-[32px] px-[80px] pt-[48px] pb-[46px]">
+    <footer className="hidden lg:bg-[#22252A] lg:text-[#F8F7F7] lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-[32px] lg:px-[80px] lg:pt-[48px] lg:pb-[46px]">
       <div className="flex gap-[152px]">
         <Image
           src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540378/Ruvid_Store_Logo-white_z1inpz.svg"
