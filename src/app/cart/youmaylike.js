@@ -35,17 +35,17 @@ function YouMayLike() {
 
   return (
     <section>
-      <div className="col-span-6 h-[0.5px] w-[88%] bg-[#BEC0BF] m-auto mt-7"></div>
+      <div className="col-span-6 h-[0.5px] w-[88%] bg-[#f2f1f0] m-auto mt-7"></div>
       <h3 className="font-semibold text-[#00140D] ml-24 text-base mt-4">
         You may also like
       </h3>
       <section className="grid grid-cols-6 justify-items-center items-center px-[85px] pb-[60px] pt-4 space-y-5">
-        <div className="col-span-6 h-[0.5px] w-full bg-[#BEC0BF]"></div>
+        <div className="col-span-6 h-[0.5px] w-full bg-[#f2f1f0]"></div>
         {products.map((product, index) => (
           <React.Fragment key={crypto.randomUUID()}>
             {renderProductsItems([product])}
             {index % 6 === 5 && index < products.length - 1 && (
-              <div className="col-span-6 h-[0.5px] w-full bg-[#BEC0BF]"></div>
+              <div className="col-span-6 h-[0.5px] w-full bg-[#f2f1f0]"></div>
             )}
           </React.Fragment>
         ))}

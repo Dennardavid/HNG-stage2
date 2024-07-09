@@ -9,7 +9,7 @@ function CartNavbar({ heading }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="px-[100px] py-[15px] border-b-[0.5px] border-b-[#BEC0BF]">
+    <header className="px-[100px] py-[15px] border-b-[0.5px] border-b-[#f2f1f0]">
       <nav className="flex items-center justify-between">
         <Link href="/">
           <Image src="/Ruvid_Store_Logo.svg" width={80} height={80} />

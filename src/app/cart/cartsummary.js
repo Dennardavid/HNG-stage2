@@ -4,8 +4,8 @@ import Link from "next/link";
 function CartSummary() {
   return (
     <section className="flex justify-between px-24">
-      <div className="w-[65%] border-r-[0.5px] border-r-[#BEC0BF]">
-        <div className=" pt-3 pb-2 border-b-[0.5px] border-b-[#BEC0BF]">
+      <div className="w-[65%] border-r-[0.5px] border-r-[#f2f1f0]">
+        <div className=" pt-3 pb-2 border-b-[0.5px] border-b-[#f2f1f0]">
           <p className="text-base font-semibold text-[#00140D]">Cart (2)</p>
         </div>
 
@@ -39,14 +39,14 @@ function CartSummary() {
         </div>
       </div>
       <div className=" w-[35%]">
-        <div className=" pt-3 pb-2 border-b-[0.5px] border-b-[#BEC0BF]">
+        <div className=" pt-3 pb-2 border-b-[0.5px] border-b-[#f2f1f0]">
           <p className="text-base font-semibold text-[#00140D] ml-5">
             Cart Summary
           </p>
         </div>
 
         <div className="flex justify-between pt-4 flex-col gap-4">
-          <div className="flex justify-between pt-4 pb-2 border-b-[0.5px] border-b-[#BEC0BF] pl-5">
+          <div className="flex justify-between pt-4 pb-2 border-b-[0.5px] border-b-[#f2f1f0] pl-5">
             <p className="text-base font-normal">subtotal</p>
             <p className="text-xl font-medium">$121.52</p>
           </div>
