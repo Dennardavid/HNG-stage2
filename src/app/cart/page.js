@@ -7,7 +7,7 @@ import "../globals.css";
 function Cart() {
   return (
     <>
-      <CartNavbar />
+      <CartNavbar heading="Cart" />
       <CartSummary />
       <YouMayLike />
       <Footer />

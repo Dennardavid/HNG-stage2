@@ -1,9 +1,11 @@
-import Navbar from "../../components/nav";
+import CheckoutNav from "./checkoutnav";
+import CheckoutDetails from "./checkoutdetails";
 
 function Checkout() {
   return (
     <>
-      <Navbar />
+      <CheckoutNav />
+      <CheckoutDetails />
     </>
   );
 }

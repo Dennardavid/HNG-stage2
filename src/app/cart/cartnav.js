@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "../globals.css";
 
-function CartNavbar() {
+function CartNavbar({ heading }) {
   return (
     <header className="px-[100px] py-[15px] border-b-[0.5px] border-b-[#0000004d]">
       <nav className="flex items-center justify-between">
@@ -10,7 +10,7 @@ function CartNavbar() {
           <Image src="/Ruvid_Store_Logo.svg" width={80} height={80} />
         </Link>
 
-        <h1 className="text-[40px] font-medium text-[#00140D]">Cart</h1>
+        <h1 className="text-[35px] font-medium text-[#00140D]">{heading}</h1>
         <div className="flex items-center w-[250px] justify-between">
           <div className="flex">
             <Image src="/profile.svg" width={36} height={36} />
@@ -21,12 +21,14 @@ function CartNavbar() {
           </div>
 
           <div>
-            <Image
-              src="/cart.svg"
-              width={24}
-              height={24}
-              className="cursor-pointer"
-            />
+            <Link href="/cart">
+              <Image
+                src="/cart.svg"
+                width={24}
+                height={24}
+                className="cursor-pointer"
+              />
+            </Link>
           </div>
         </div>
       </nav>
