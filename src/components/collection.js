@@ -9,7 +9,8 @@ function Collection() {
         key={crypto.randomUUID()}
         className="cursor-pointer flex flex-col items-center justify-between py-2 rounded-[13px] transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-100 hover:shadow-lg"
       >
-        <div>
+        <div className="relative">
+          <div className="hover-heart absolute top-2 right-5"></div>
           <Image
             src={product.src}
             width={175}

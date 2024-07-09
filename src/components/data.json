@@ -7,7 +7,7 @@
   },
   { "src": "/3.svg", "details": "N°5 Eau de Parfum Spray", "prize": "$121.52" },
   { "src": "/4.svg", "details": "N°5 Eau de Parfum Spray", "prize": "$100" },
-  { "src": "/5.svg", "details": "Hugo Boss Oud Aromatic", "prize": "$63.99" },
+  { "src": "https://res.cloudinary.com/dsngkhlct/image/upload/v1720565885/image_2_zrsdt3.svg", "details": "Hugo Boss Oud Aromatic", "prize": "$63.99" },
   { "src": "/6.svg", "details": "Daisy Marc Jacobs", "prize": "$107.50" },
   { "src": "/7.svg", "details": "Gucci Flora Prefume", "prize": "$121.52" },
   {

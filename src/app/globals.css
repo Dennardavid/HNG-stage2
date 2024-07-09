@@ -8,3 +8,23 @@ body {
   font-family: "Poppins", sans-serif;
   color: #00140d;
 }
+
+.hover-heart {
+  position: relative;
+}
+
+.hover-heart::before {
+  content: url("https://res.cloudinary.com/dsngkhlct/image/upload/v1720558330/whiteheart_szlaos.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.hover-heart:hover::before {
+  content: url("https://res.cloudinary.com/dsngkhlct/image/upload/v1720558330/orangeheart_zybi32.svg");
+  opacity: 1;
+}
