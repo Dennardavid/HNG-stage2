@@ -33,7 +33,7 @@ function Hero() {
     products.map((product, index) => (
       <li
         key={crypto.randomUUID()}
-        className={`list-none ${
+        className={`list-none flex items-center ${
           activeLink === index ? "text-[#FF7E08] font-bold" : "text-gray-700"
         }`}
       >
@@ -44,7 +44,7 @@ function Hero() {
         >
           {product.text}
           {activeLink === index && (
-            <span className="ml-20 ">
+            <span className="ml-16 ">
               <Image
                 src="/DropDown.svg"
                 width={20}

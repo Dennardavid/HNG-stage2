@@ -22,7 +22,7 @@ function CartNavbar() {
 
           <div>
             <Image
-              src="/heart.svg"
+              src="/cart.svg"
               width={24}
               height={24}
               className="cursor-pointer"
