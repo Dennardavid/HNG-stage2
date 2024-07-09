@@ -18,11 +18,11 @@ function Hero() {
   ];
 
   const images = [
-    "/heroperfume1.svg",
-    "/heroperfume2.svg",
-    "/heroperfume3.svg",
-    "/heroperfume4.svg",
-    "/heroperfume5.svg",
+    "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540378/heroperfume1_vq5uiq.svg",
+    "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540378/heroperfume2_zmgwlr.svg",
+    "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540374/heroperfume5_z235kk.svg",
+    "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540370/heroperfume3_d1e2nq.svg",
+    "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540368/heroperfume4_syin5k.svg",
   ];
 
   const handleLinkClick = (index) => {

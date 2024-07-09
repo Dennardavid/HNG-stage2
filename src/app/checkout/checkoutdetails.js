@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Toggle from "./toggle";
 
 function CheckoutDetails() {
   return (
@@ -8,7 +9,7 @@ function CheckoutDetails() {
           <h3 className="font-semibold text-lg">Delivery Details</h3>
         </div>
         <div className="flex flex-col gap-3 pb-2 border-b-[0.5px] border-b-[#0000004d]">
-          <div className="flex justify-between py-1">
+          <div className="flex justify-between py-1 pt-1">
             <p className="text-sm ">Customer Address</p>
             <p className="text-sm text-[#FF7E08] hover:cursor-pointer mr-3">
               Edit
@@ -22,7 +23,7 @@ function CheckoutDetails() {
           </div>
         </div>
         <div className="flex flex-col gap-3 pb-2 border-b-[0.5px] border-b-[#0000004d]">
-          <div className="flex justify-between">
+          <div className="flex justify-between pt-1j">
             <p className="text-sm">Delivery Mode</p>
             <p className="text-sm text-[#FF7E08] hover:cursor-pointer mr-3">
               Edit
@@ -36,54 +37,82 @@ function CheckoutDetails() {
           </div>
         </div>
 
-        <div>
-          <h2>Card Number</h2>
-          <div>
-            <Image src="/card.svg" width={24} height={24} />
-            <label for="card">Card Number</label>
+        <div className="pt-3 bg-red-400w w-[60%] ">
+          <div className="border-b-[0.5px] border-b-[#0000004d] pb-2">
+            <label htmlFor="card">Card Number</label>
             <br />
-            <input type="text" id="card" placeholder="0001 1234 3421 8745" />
+            <div className="flex items-center gap-3 mt-3">
+              <Image src="/card.svg" width={24} height={24} />
+              <input
+                type="number"
+                id="card"
+                placeholder="0001 1234 3421 8745"
+                className="focus:outline-none w-[200px]"
+              />
+            </div>
           </div>
 
-          <div>
-            <Image src="/card.svg" width={24} height={24} />
-            <label for="date">Valid Till</label>
-            <br />
-            <input type="text" id="date" placeholder="09/2029" />
-
+          <div className="mt-3 flex justify-between border-b-[0.5px] border-b-[#0000004d] pb-2">
             <div>
-              <Image src="/card.svg" width={24} height={24} />
+              <label htmlFor="date">Valid Till</label>
+              <br />
+              <div className="flex items-center gap-3 mt-3">
+                <Image src="/card.svg" width={24} height={24} />
+                <input
+                  type="date"
+                  id="date"
+                  placeholder="09/2029"
+                  className="focus:outline-none w-[200px] "
+                />
+              </div>
+            </div>
+
+            <div className="mr-6 mt-1">
               <label for="CVV">CVV</label>
               <br />
-              <input type="text" id="CVV" placeholder="123" />
+              <div className="flex gap-3 mt-3">
+                <Image src="/card.svg" width={24} height={24} />
+                <input
+                  type="number"
+                  id="CVV"
+                  placeholder="123"
+                  className="focus:outline-none w-[200px] "
+                />
+              </div>
             </div>
+          </div>
+          <div className="flex justify-between pt-5">
+            <p className="font-normal text-sm">Remember this card next time</p>
+            <Toggle />
           </div>
         </div>
       </div>
-      <div className="bg-green-400 w-[30%]">
-        <div className="pt-3 pb-2 border-b-[0.5px] border-b-[#0000004d]">
+      <div className=" w-[30%]">
+        <div className="pt-3 pb-2 border-b-[0.5px] border-b-[#0000004d] px-3">
           <h3 className="font-semibold text-lg">Order Summary</h3>
         </div>
-        <div className=" flex justify-between pb-2 border-b-[0.5px] border-b-[#0000004d]">
+        <div className=" flex justify-between pb-[14.5px] border-b-[0.5px] border-b-[#0000004d] px-3">
           <div className="flex flex-col gap-2 pt-1">
             <p>item</p>
             <p>Delivery Fees</p>
             <p>Discount</p>
           </div>
-          <div className="font-normal text-base">
+          <div className="font-normal text-base flex flex-col gap-2 pt-1">
             <p>$121.52</p>
             <p>2.22</p>
             <p>$1.00</p>
           </div>
         </div>
         <div>
-          <div className="flex justify-between pb-2">
+          <div className="flex justify-between pb-3 pt-3 px-3">
             <p>Total</p>
             <p className="text-[#FF7E08] font-medium text-base">$124.74</p>
           </div>
-          <button className="bg-[#FF7E08] rounded-full text-white py-4 w-[80%] font-semibold m-auto">
-            Checkout
-          </button>
+          <div className="flex justify-center items-center mt-5">
+            <button className="bg-[#FF7E08] rounded-full text-white py-4 w-[80%] font-semibold m-auto">
+              Checkout
+            </button>
+          </div>
         </div>
       </div>
     </section>
