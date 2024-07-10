@@ -42,13 +42,13 @@ function CartSummary() {
       </div>
       <div className=" lg:w-[35%]">
         <div className=" pt-5 lg:pt-3 pb-2 border-b-[0.5px] border-b-[#f2f1f0]">
-          <p className="font-semibold text-lg lg:text-base lg:font-semibold text-[#00140D] lg:ml-5">
+          <p className="font-semibold lg:hidden text-lg lg:text-base lg:font-semibold text-[#00140D] lg:ml-5">
             Cart Summary
           </p>
         </div>
 
         <div className="flex justify-between pt-4 flex-col gap-4">
-          <div className=" flex justify-between lg:flex lg:justify-between pt-2 pb-4 lg:pt-4 lg:pb-2 border-b-[0.5px] border-b-[#f2f1f0] lg:pl-5">
+          <div className=" flex lg:hidden justify-between lg:justify-between pt-2 pb-4 lg:pt-4 lg:pb-2 border-b-[0.5px] border-b-[#f2f1f0] lg:pl-5">
             <p className="text-base font-normal">subtotal</p>
             <p className="text-xl font-medium">$121.52</p>
           </div>

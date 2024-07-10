@@ -8,7 +8,7 @@ function Cart() {
   return (
     <>
       <CartNavbar />
-      <main>
+      <main className="pb-[100px]">
         <CartSummary />
         <YouMayLike />
       </main>
