@@ -75,7 +75,7 @@ function Collection() {
 
   return (
     <section className="px-3 pb-[100px] lg:px-[80px] lg:pb-[60px] lg:pt-5">
-      <div>
+      <div className="lg:hidden">
         <h2>Categories</h2>
         <div className="flex space-x-1 overflow-x-auto py-4">
           {collection.map((item, index) => (
@@ -91,7 +91,7 @@ function Collection() {
           ))}
         </div>
       </div>
-      <div className="flex justify-between pb-2">
+      <div className="flex justify-between pb-2 lg:hidden">
         <p className="text-base font-medium">Recommended For You</p>
         <p className="text-sm font-medium text-[#FF7E08]">View all</p>
       </div>
