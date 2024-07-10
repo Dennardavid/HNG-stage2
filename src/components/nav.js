@@ -95,7 +95,7 @@ function Navbar() {
                   </Link>
                 </div>
               )}
-              <div className="flex gap-2">
+              <div className="flex gap-2 ml-[50px]">
                 <Link href="/cart">
                   <Image
                     src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540360/cart_jesv3q.svg"
@@ -113,12 +113,11 @@ function Navbar() {
               </div>
             </div>
 
-            {/* Cart  */}
           </div>
         </div>
-        {/* Search bar */}
 
-        {/* Profile and drop down menu  */}
+
+
       </nav>
     </header>
   );
