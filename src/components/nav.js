@@ -46,7 +46,7 @@ function Navbar() {
         </div>
 
         {/* Profile and drop down menu  */}
-        <div className="flex  items-center w-[320px] justify-between bg-slate-400 ">
+        <div className="flex  items-center w-[320px] justify-between ">
           <div
             className="flex justify-center items-center ml-2 cursor-pointer gap-3 relative"
             onClick={() => setIsOpen(!isOpen)}
