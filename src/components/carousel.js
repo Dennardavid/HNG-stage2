@@ -31,20 +31,6 @@ function Carousel({
       >
         {images}
       </div>
-      {/* <div className="absolute inset-0 flex items-center justify-between p-4">
-        <button
-          onClick={previousImage}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
-        >
-          prev
-        </button>
-        <button
-          onClick={nextImage}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
-        >
-          next
-        </button>
-      </div> */}
 
       <div className="absolute bottom-4 right-0 left-0">
         <div className="flex items-center justify-center gap-2">
