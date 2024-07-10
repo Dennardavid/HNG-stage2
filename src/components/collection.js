@@ -3,6 +3,45 @@ import Image from "next/image";
 import React from "react";
 
 function Collection() {
+  const collection = [
+    {
+      img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540361/7_hn5nlj.svg",
+      text: "perfume",
+    },
+    {
+      img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540353/2_mbvkow.svg",
+      text: "perfume",
+    },
+    {
+      img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540357/16_yrjvdo.svg",
+      text: "perfume",
+    },
+    {
+      img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540358/15_axwcyk.svg",
+      text: "perfume",
+    },
+    {
+      img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540358/18_w1gls0.svg",
+      text: "perfume",
+    },
+    {
+      img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540352/10_cjdsbw.svg",
+      text: "perfume",
+    },
+    {
+      img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540352/11_u6cbiy.svg",
+      text: "perfume",
+    },
+    {
+      img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540347/3_bj5tvb.svg",
+      text: "perfume",
+    },
+    {
+      img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540352/9_nj6lv0.svg",
+      text: "perfume",
+    },
+  ];
+
   const renderProductsItems = (products) => {
     return products.map((product) => (
       <article
@@ -36,9 +75,28 @@ function Collection() {
 
   return (
     <section className="px-3 pb-[100px] lg:px-[80px] lg:pb-[60px] lg:pt-5">
+      <div>
+        <h2>Categories</h2>
+        <div className="flex space-x-1 overflow-x-auto py-4">
+          {collection.map((item, index) => (
+            <div key={index} className="flex-shrink-0 w-[90px] ">
+              <Image
+                src={item.img}
+                width={60}
+                height={60}
+                alt={item.text}
+                className="rounded-full"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="flex justify-between pb-2">
+        <p className="text-base font-medium">Recommended For You</p>
+        <p className="text-sm font-medium text-[#FF7E08]">View all</p>
+      </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-4 gap-x-4">
-        {/* <div className="hdiden  lg:col-span-6 h-[0.5px] bg-[#f2f1f0]"></div> */}
-        {products.map((product,index) => (
+        {products.map((product, index) => (
           <React.Fragment key={crypto.randomUUID()}>
             {renderProductsItems([product])}
             {index % 3 === 2 && index < products.length - 1 && (
