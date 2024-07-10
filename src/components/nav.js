@@ -43,7 +43,7 @@ function Navbar() {
               className="cursor-pointer"
             />
           </div>
-          <div className="flex  items-center w-[320px] justify-between ">
+          <div className="flex  items-center w-full justify-between relative">
             <div
               className="flex justify-center items-center ml-2 cursor-pointer gap-3 relative"
               onClick={() => setIsOpen(!isOpen)}
@@ -95,7 +95,7 @@ function Navbar() {
                   </Link>
                 </div>
               )}
-              <div className="flex gap-2 ml-[50px]">
+              <div className="flex gap-2  absolute right-[-80%]">
                 <Link href="/cart">
                   <Image
                     src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540360/cart_jesv3q.svg"
