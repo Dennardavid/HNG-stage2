@@ -64,7 +64,7 @@ function Hero() {
           {renderProductsItems(products)}
         </ul>
       </div>
-      <div className="hidden lg:w-[891px] lg:mt-8 lg:mr-[100px] lg:z-0">
+      <div className="hidden lg:block lg:w-[891px] lg:mt-8 lg:mr-[100px] lg:z-0">
         <Carousel autoSlide={true}>
           {images.map((image, index) => (
             <Image
