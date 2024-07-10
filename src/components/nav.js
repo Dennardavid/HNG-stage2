@@ -8,7 +8,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="px-[50px] py-[15px] z-20">
+    <header className="px-3 py-3 flex flex-col-reverse lg:px-[50px] lg:py-[15px] lg:z-20">
       <nav className="lg:flex lg:items-center lg:justify-around">
         {/* Shop Logo */}
         <Image
@@ -29,7 +29,7 @@ function Navbar() {
           <input
             type="text"
             placeholder="What are you looking for"
-            className="w-[500px] bg-[#F2F1F0] focus:outline-none "
+            className="w-[90%] lg:w-[500px] bg-[#F2F1F0] focus:outline-none "
           />
           <Image
             src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540360/camera_s6fpfc.svg"
