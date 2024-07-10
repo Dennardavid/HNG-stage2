@@ -12,7 +12,7 @@ function CartSummary() {
         </div>
 
         {/* Product details */}
-        <div className="flex justify-between pt-4">
+        <div className="flex justify-between pt-2 lg:pt-4">
           <div className="flex gap-3 items-center">
             <Image src="/3.svg" width={121} height={114} />
             <div className="flex flex-col gap-3">
