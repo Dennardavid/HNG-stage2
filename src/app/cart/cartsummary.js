@@ -28,6 +28,7 @@ function CartSummary() {
           {/* price and quantity */}
           <div className="flex flex-col gap-7 lg:gap-4 items-center justify-center lg:mr-4">
             <p>$121.52</p>
+            <p className="text-xs line-through text-[#bec0bf]">$150.12</p>
             <div className="flex gap-2">
               <span className="px-2 bg-[#FF7E08] text-white text-lg flex justify-center items-center cursor-pointer">
                 <Image src="/remove2.svg" width={15} height={15} />

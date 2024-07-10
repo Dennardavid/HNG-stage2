@@ -101,10 +101,17 @@ function Navbar() {
           </div>
 
           {/* Cart  */}
-          <div>
+          <div className="flex">
             <Link href="/cart">
               <Image
                 src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540360/cart_jesv3q.svg"
+                width={24}
+                height={24}
+              />
+            </Link>
+            <Link href="/" className="lg:hidden">
+              <Image
+                src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720630967/Frame_74_jvr6lg.svg"
                 width={24}
                 height={24}
               />
