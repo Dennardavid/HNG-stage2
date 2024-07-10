@@ -48,7 +48,7 @@ const CardDetailsSection = () => (
       </div>
     </div>
 
-    <div className="mt-3 flex justify-between border-b-[0.5px] border-b-[#f2f1f0] pb-2">
+    <div className="mt-8 flex justify-between border-b-[0.5px] border-b-[#f2f1f0] pb-2">
       <div>
         <label htmlFor="date">Valid Till</label>
         <br />
@@ -132,7 +132,7 @@ const CheckoutDetails = () => (
     {/* Mobile */}
     <div className="m-auto lg:hidden pt-3 w-[100%]">
       <CardDetailsSection />
-      <div className="flex justify-center items-center mt-8 lg:mt-5">
+      <div className="flex justify-center items-center mt-[50px] lg:mt-5">
         <button className="bg-[#FF7E08] rounded-full text-white py-4 w-[80%] font-semibold m-auto border-[0.5px] border-[#ff7e08] hover:text-[#00140d] hover:border-[0.5px] hover:border-[#ff7e08] hover:bg-[#f8f8f8]">
           Checkout
         </button>

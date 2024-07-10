@@ -9,8 +9,8 @@ function CartNavbar({ heading }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="px-[100px] py-[15px] border-b-[0.5px] border-b-[#f2f1f0]">
-      <nav className="flex items-center justify-between">
+    <header className="lg:px-[100px] lg:py-[15px] lg:border-b-[0.5px] lg:border-b-[#f2f1f0]">
+      <nav className="hidden lg:flex items-center justify-between">
         <Link href="/">
           <Image src="/Ruvid_Store_Logo.svg" width={80} height={80} />
         </Link>
@@ -83,6 +83,12 @@ function CartNavbar({ heading }) {
             </div>
           </div>
         </div>
+      </nav>
+      <nav className="flex lg:hidden px-2 justify-between pt-3 pb-3">
+        <Image src="/prevpage.svg" width={20} height={20} />
+        <h1 className="text-[20px] font-medium text-[#00140D] text-center mr-[30%]">
+          {heading}
+        </h1>
       </nav>
     </header>
   );
