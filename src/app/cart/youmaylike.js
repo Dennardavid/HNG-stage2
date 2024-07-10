@@ -34,7 +34,7 @@ function YouMayLike() {
   };
 
   return (
-    <section>
+    <section className="hidden lg:block">
       <div className="col-span-6 h-[0.5px] w-[88%] bg-[#f2f1f0] m-auto mt-7"></div>
       <h3 className="font-semibold text-[#00140D] ml-24 text-base mt-4">
         You may also like
