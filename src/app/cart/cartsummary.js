@@ -79,7 +79,7 @@ function CartSummary() {
           </div>
           <Link
             href="/checkout"
-            className="flex justify-center items-center mt-5 lg:mt-0"
+            className="flex justify-center items-center mt-3 lg:mt-0"
           >
             <button className="bg-[#FF7E08] rounded-full text-white py-4 w-[90%] lg:w-[80%] font-semibold border-[0.5px] border-[#ff7e08] hover:text-[#00140d] hover:border-[0.5px] hover:border-[#ff7e08] hover:bg-[#f8f8f8]">
               Checkout

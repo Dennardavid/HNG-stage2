@@ -67,8 +67,8 @@ function Footer() {
     ));
 
   return (
-    <footer className="fixed bottom-0 left-0 w-full ">
-      <div className="lg:hidden flex justify-evenly items-center border-[0.5px] border-t-[#f2f1f0] pt-2 pb-2">
+    <footer>
+      <div className="lg:hidden fixed bottom-0 left-0 w-full flex justify-evenly items-center border-[0.5px] border-t-[#f2f1f0] pt-2 pb-2">
         {renderMobileFooterItems(mobileFooter)}
       </div>
       <div className="hidden lg:bg-[#22252A] lg:text-[#F8F7F7] lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-[32px] lg:px-[80px] lg:pt-[48px] lg:pb-[46px]">
