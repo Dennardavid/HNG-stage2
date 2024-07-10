@@ -4,7 +4,10 @@ import React from "react";
 
 const AddressSection = () => (
   <div className="flex flex-col gap-3 pb-2 border-b-[0.5px] border-b-[#f2f1f0]">
-    <div className="flex justify-between py-1 pt-1">
+    <div className="pt-3 pb-2 border-b-[0.5px] border-b-[#f2f1f0]">
+      <h3 className="font-semibold text-lg">Delivery Details</h3>
+    </div>
+    <div className="flex justify-between py-1 mt-[-10px]">
       <p className="text-sm">Customer Address</p>
       <p className="text-sm text-[#FF7E08] hover:cursor-pointer mr-3">Edit</p>
     </div>
@@ -86,7 +89,7 @@ const CardDetailsSection = () => (
 
 const OrderSummarySection = () => (
   <div className="pt-3">
-    <div className="pb-2 border-b-[0.5px] border-b-[#f2f1f0]">
+    <div className="px-2 pb-2 border-b-[0.5px] border-b-[#f2f1f0]">
       <h3 className="font-semibold text-lg">Order Summary</h3>
     </div>
     <div className="flex justify-between pb-[14.5px] border-b-[0.5px] border-b-[#f2f1f0] px-3">
