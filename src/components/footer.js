@@ -32,22 +32,27 @@ function Footer() {
   const mobileFooter = [
     {
       src: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720568027/home_yn5gal.svg",
+      href: "/",
       text: "Home",
     },
     {
       src: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720568027/wishlist_neve4i.svg",
+      href: "/",
       text: "Explore",
     },
     {
       src: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720568026/services_ab1umy.svg",
+      href: "/cart",
       text: "Cart",
     },
     {
       src: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720568026/messages_ckrfvz.svg",
+      href: "/",
       text: "Wishlist",
     },
     {
       src: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720568061/account_t3lz0e.svg",
+      href: "/",
       text: "profile",
     },
   ];
@@ -61,7 +66,7 @@ function Footer() {
 
   const renderMobileFooterItems = (pages) =>
     pages.map((page) => (
-      <Link href="/" key={crypto.randomUUID()}>
+      <Link href={page.href} key={crypto.randomUUID()}>
         <Image src={page.src} width={40} height={40} alt={page.text} />
       </Link>
     ));

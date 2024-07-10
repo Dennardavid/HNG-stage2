@@ -35,14 +35,14 @@ function Collection() {
   };
 
   return (
-    <section className="px-3 lg:px-[80px] lg:pb-[60px] lg:pt-5">
-      <div className="grid grid-cols-3 lg:grid-cols-6 gap-y-4 gap-x-4">
-        <div className="col-span-3 lg:col-span-6 h-[0.5px] bg-[#f2f1f0]"></div>
-        {products.map((product, index) => (
+    <section className="px-3 pb-[100px] lg:px-[80px] lg:pb-[60px] lg:pt-5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-4 gap-x-4">
+        {/* <div className="hdiden  lg:col-span-6 h-[0.5px] bg-[#f2f1f0]"></div> */}
+        {products.map((product,index) => (
           <React.Fragment key={crypto.randomUUID()}>
             {renderProductsItems([product])}
             {index % 3 === 2 && index < products.length - 1 && (
-              <div className="col-span-3 lg:col-span-6 h-[0.5px] bg-[#f2f1f0]"></div>
+              <div className="hidden md:col-span-3 lg:col-span-6 h-[0.5px] bg-[#f2f1f0]"></div>
             )}
           </React.Fragment>
         ))}
