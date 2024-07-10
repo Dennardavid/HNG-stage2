@@ -88,11 +88,13 @@ function CheckoutNav() {
       </nav>
       <nav className="flex lg:hidden px-2 justify-between pt-3 pb-3">
         <Link href="/cart">
-          <Image src="/prevpage.svg" width={20} height={20} />
+          <button className="bg-transparent border-none w-10 h-10">
+            <Image src="/prevpage.svg" width={20} height={20} />
+          </button>
         </Link>
 
         <h1 className="text-[20px] font-medium text-[#00140D] text-center mr-[30%]">
-          {heading}
+          Payment Details
         </h1>
       </nav>
     </header>

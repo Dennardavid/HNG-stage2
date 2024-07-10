@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import "../globals.css";
 
-function CartNavbar({ heading }) {
+function CartNavbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -15,7 +15,7 @@ function CartNavbar({ heading }) {
           <Image src="/Ruvid_Store_Logo.svg" width={80} height={80} />
         </Link>
 
-        <h1 className="text-[35px] font-medium text-[#00140D]">{heading}</h1>
+        <h1 className="text-[35px] font-medium text-[#00140D]">Cart</h1>
         <div className="flex items-center w-[250px] justify-between">
           <div className="flex  items-center w-[300px] justify-between">
             <div
@@ -87,7 +87,7 @@ function CartNavbar({ heading }) {
       <nav className="flex lg:hidden px-2 justify-between pt-3 pb-3">
         <Image src="/prevpage.svg" width={20} height={20} />
         <h1 className="text-[20px] font-medium text-[#00140D] text-center mr-[30%]">
-          {heading}
+          Cart
         </h1>
       </nav>
     </header>
