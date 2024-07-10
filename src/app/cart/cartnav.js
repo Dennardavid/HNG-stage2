@@ -87,7 +87,7 @@ function CartNavbar() {
       <nav className="flex lg:hidden px-2 justify-between pt-3 pb-2">
         <button>
           <Link href="/">
-            <Image src="/prevpage.svg" width={20} height={20} />
+            <Image src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720628156/Navigation_bumxdd.svg" width={20} height={20} />
           </Link>
         </button>
 

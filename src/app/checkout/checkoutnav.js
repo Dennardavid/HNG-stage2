@@ -89,7 +89,7 @@ function CheckoutNav() {
       <nav className="flex lg:hidden px-2 justify-between pt-3 pb-3">
         <Link href="/cart">
           <button className="bg-transparent border-none w-10 h-10">
-            <Image src="/prevpage.svg" width={20} height={20} />
+            <Image src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720628156/Navigation_bumxdd.svg" width={20} height={20} />
           </button>
         </Link>
 
