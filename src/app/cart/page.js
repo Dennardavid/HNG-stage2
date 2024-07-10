@@ -6,12 +6,12 @@ import "../globals.css";
 
 function Cart() {
   return (
-    <section className="h-dvh">
+    <>
       <CartNavbar />
       <CartSummary />
       <YouMayLike />
       <Footer />
-    </section>
+    </>
   );
 }
 
