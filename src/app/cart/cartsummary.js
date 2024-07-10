@@ -73,7 +73,7 @@ function CartSummary() {
               </div>
               <div className="flex justify-between pb-3 pt-3">
                 <p>Total</p>
-                <p className="text-[#FF7E08] font-medium text-base">$124.74</p>
+                <p className="text-[#FF7E08] font-medium text-xl">$124.74</p>
               </div>
             </div>
           </div>

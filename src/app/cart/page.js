@@ -8,8 +8,10 @@ function Cart() {
   return (
     <>
       <CartNavbar />
-      <CartSummary />
-      <YouMayLike />
+      <main>
+        <CartSummary />
+        <YouMayLike />
+      </main>
       <Footer />
     </>
   );

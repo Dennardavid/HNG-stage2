@@ -8,6 +8,14 @@ body {
   font-family: "Poppins", sans-serif;
   color: #00140d;
 }
+html,
+body {
+  height: 100%;
+}
+
+main {
+  flex: 1;
+}
 
 .hover-heart {
   position: relative;
