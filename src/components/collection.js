@@ -10,27 +10,27 @@ function Collection() {
     },
     {
       img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540353/2_mbvkow.svg",
-      text: "perfume",
+      text: "Hair Care",
     },
     {
       img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540357/16_yrjvdo.svg",
-      text: "perfume",
+      text: "Skin Care",
     },
     {
       img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540358/15_axwcyk.svg",
-      text: "perfume",
+      text: "Make Up",
     },
     {
       img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540358/18_w1gls0.svg",
-      text: "perfume",
+      text: "Health & Beauty",
     },
     {
       img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540352/10_cjdsbw.svg",
-      text: "perfume",
+      text: "Baby’s  Fashion",
     },
     {
       img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540352/11_u6cbiy.svg",
-      text: "perfume",
+      text: "Woman’s Fashion",
     },
     {
       img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540347/3_bj5tvb.svg",
@@ -38,7 +38,7 @@ function Collection() {
     },
     {
       img: "https://res.cloudinary.com/dsngkhlct/image/upload/v1720540352/9_nj6lv0.svg",
-      text: "perfume",
+      text: "Men’s Fashion",
     },
   ];
 
@@ -76,10 +76,10 @@ function Collection() {
   return (
     <section className="px-3 pb-[100px] lg:px-[80px] lg:pb-[60px] lg:pt-5">
       <div className="lg:hidden">
-        <h2>Categories</h2>
+        <h2 className="text-base font-medium">Categories</h2>
         <div className="flex space-x-1 overflow-x-auto py-4">
           {collection.map((item, index) => (
-            <div key={index} className="flex-shrink-0 w-[90px] ">
+            <div key={index} className="flex-shrink-0 w-[90px] flex flex-col items-center">
               <Image
                 src={item.img}
                 width={60}
@@ -87,6 +87,7 @@ function Collection() {
                 alt={item.text}
                 className="rounded-full"
               />
+              <p className="text-center text-[11px] font-normal mt-2">{item.text}</p>
             </div>
           ))}
         </div>
