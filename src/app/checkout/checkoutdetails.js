@@ -51,7 +51,7 @@ const CardDetailsSection = () => (
       </div>
     </div>
 
-    <div className="mt-8 flex justify-between border-b-[0.5px] border-b-[#f2f1f0] pb-2">
+    <div className="mt-8 flex justify-between items-center gap-3 border-b-[0.5px] border-b-[#f2f1f0] pb-2">
       <div>
         <label htmlFor="date">Valid Till</label>
         <br />
