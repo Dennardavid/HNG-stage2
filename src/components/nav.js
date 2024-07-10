@@ -46,7 +46,7 @@ function Navbar() {
         </div>
 
         {/* Profile and drop down menu  */}
-        <div className="flex  items-center w-[300px] justify-between">
+        <div className="flex  items-center w-[320px] justify-between bg-slate-400 ">
           <div
             className="flex justify-center items-center ml-2 cursor-pointer gap-3 relative"
             onClick={() => setIsOpen(!isOpen)}
@@ -98,25 +98,25 @@ function Navbar() {
                 </Link>
               </div>
             )}
+            <div className="flex gap-2">
+              <Link href="/cart">
+                <Image
+                  src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540360/cart_jesv3q.svg"
+                  width={24}
+                  height={24}
+                />
+              </Link>
+              <Link href="/" className="lg:hidden">
+                <Image
+                  src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720630967/Frame_74_jvr6lg.svg"
+                  width={24}
+                  height={24}
+                />
+              </Link>
+            </div>
           </div>
 
           {/* Cart  */}
-          <div className="flex">
-            <Link href="/cart">
-              <Image
-                src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540360/cart_jesv3q.svg"
-                width={24}
-                height={24}
-              />
-            </Link>
-            <Link href="/" className="lg:hidden">
-              <Image
-                src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720630967/Frame_74_jvr6lg.svg"
-                width={24}
-                height={24}
-              />
-            </Link>
-          </div>
         </div>
       </nav>
     </header>
