@@ -85,10 +85,21 @@ function CartNavbar() {
         </div>
       </nav>
       <nav className="flex lg:hidden px-2 justify-between pt-3 pb-3">
-        <Image src="/prevpage.svg" width={20} height={20} />
-        <h1 className="text-[20px] font-medium text-[#00140D] text-center mr-[30%]">
+        <button>
+          <Link href="/">
+            <Image src="/prevpage.svg" width={20} height={20} />
+          </Link>
+        </button>
+
+        <h1 className="text-[20px] font-medium text-[#00140D] text-center">
           Cart
         </h1>
+
+        <Image
+          src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720558330/orangeheart_zybi32.svg"
+          width={20}
+          height={20}
+        />
       </nav>
     </header>
   );
