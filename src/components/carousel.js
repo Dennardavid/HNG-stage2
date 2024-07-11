@@ -7,11 +7,6 @@ function Carousel({
   autoSlideInterval = 3000,
 }) {
   const [currentImage, setCurrentImage] = useState(0);
-  const previousImage = () =>
-    setCurrentImage((currentImage) =>
-      currentImage === 0 ? images.length - 1 : currentImage - 1
-    );
-
   const nextImage = () =>
     setCurrentImage((currentImage) =>
       currentImage === images.length - 1 ? 0 : currentImage + 1
@@ -36,6 +31,7 @@ function Carousel({
         <div className="flex items-center justify-center gap-2">
           {images.map((_, i) => (
             <div
+            key={crypto.randomUUID()}
               className={`
               transition-all w-3 h-3 bg-[#DB4444] rounded-full 
               ${

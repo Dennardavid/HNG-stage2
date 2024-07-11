@@ -17,8 +17,8 @@ function Navbar() {
           height={80}
           className="hidden lg:block lg:cursor-pointer"
         />
-        <div className="flex flex-col-reverse gap-2 lg:flex-row lg:gap-44">
-          <div className="flex p-2 px-3 rounded-full bg-[#F2F1F0]">
+        <div className="flex flex-col-reverse gap-2 lg:flex-row lg:gap-44 ">
+          <div className="flex p-2 px-3 rounded-full bg-[#F2F1F0] bg">
             <Image
               src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540379/search_wq6dxd.svg"
               width={24}
@@ -43,59 +43,61 @@ function Navbar() {
               className="cursor-pointer"
             />
           </div>
-          <div className="flex  items-center w-full justify-between relative">
+          <div className="flex  items-center w-full justify-between ">
             <div
-              className="flex justify-center items-center ml-2 cursor-pointer gap-3 relative"
+              className="flex justify-between items-center lg:ml-2 cursor-pointer gap-3  w-full"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <div>
-                <Image
-                  src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540388/profile_owx8pe.svg"
-                  width={36}
-                  height={36}
-                />
-              </div>
-              <p>Hi, Ebunoluwa</p>
-              <span>
-                {isOpen ? (
+              <div className="flex items-center gap-2 relative">
+                <div>
                   <Image
-                    src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540372/Navigation2_ok6uhp.svg"
-                    width={24}
-                    height={24}
+                    src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540388/profile_owx8pe.svg"
+                    width={36}
+                    height={36}
                   />
-                ) : (
-                  <Image
-                    src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540370/Navigation_scinpl.svg"
-                    width={24}
-                    height={24}
-                  />
-                )}
-              </span>
-
-              {/* Drop down menu */}
-              {isOpen && (
-                <div className="absolute top-12 right-2 w-[150px] bg-[#F2F1F0] rounded-md shadow-md flex flex-col gap-2 z-20">
-                  <Link
-                    href={"/"}
-                    className="hover:bg-[#FF7E08] p-2 hover:text-[#f2f1f0] rounded-t-md"
-                  >
-                    Explore
-                  </Link>
-                  <Link
-                    href={"/cart"}
-                    className="hover:bg-[#FF7E08] p-2 hover:text-[#f2f1f0]"
-                  >
-                    Cart
-                  </Link>
-                  <Link
-                    href={"/"}
-                    className="hover:bg-[#FF7E08] p-2 hover:text-[#f2f1f0] rounded-b-md"
-                  >
-                    Wishlist
-                  </Link>
                 </div>
-              )}
-              <div className="flex gap-2  absolute right-[-80%]">
+                <p>Hi, Ebunoluwa</p>
+                <span className="hidden lg:block">
+                  {isOpen ? (
+                    <Image
+                      src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540372/Navigation2_ok6uhp.svg"
+                      width={24}
+                      height={24}
+                    />
+                  ) : (
+                    <Image
+                      src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540370/Navigation_scinpl.svg"
+                      width={24}
+                      height={24}
+                    />
+                  )}
+                </span>
+                {/* Drop down menu */}
+                {isOpen && (
+                  <div className="hidden absolute top-12 right-2 w-[150px] bg-[#F2F1F0] rounded-md shadow-md lg:flex flex-col gap-2 z-20">
+                    <Link
+                      href={"/"}
+                      className="hover:bg-[#FF7E08] p-2 hover:text-[#f2f1f0] rounded-t-md"
+                    >
+                      Explore
+                    </Link>
+                    <Link
+                      href={"/cart"}
+                      className="hover:bg-[#FF7E08] p-2 hover:text-[#f2f1f0]"
+                    >
+                      Cart
+                    </Link>
+                    <Link
+                      href={"/"}
+                      className="hover:bg-[#FF7E08] p-2 hover:text-[#f2f1f0] rounded-b-md"
+                    >
+                      Wishlist
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <div className="flex gap-2   right-[-80%] ">
                 <Link href="/cart">
                   <Image
                     src="https://res.cloudinary.com/dsngkhlct/image/upload/v1720540360/cart_jesv3q.svg"
@@ -112,12 +114,8 @@ function Navbar() {
                 </Link>
               </div>
             </div>
-
           </div>
         </div>
-
-
-
       </nav>
     </header>
   );
